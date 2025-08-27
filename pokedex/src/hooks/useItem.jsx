@@ -1,9 +1,19 @@
-import { useQuery } from "@tanstack/react-query";
+import { useQueries, useQuery } from "@tanstack/react-query";
 
-export default function useItem({ key, fn, staleTime }) {
-    return useQuery({
-        queryKey: [key],
-        queryFn: fn,
-        staleTime: staleTime
-    });
+export default function useItem({ key, fn, queries, staleTime }) {
+    if (queries && Array.isArray(queries)) {
+        return useQueries({
+            queries: queries.map((q) => ({
+                queryKey: [q.key],
+                queryFn: q.fn,
+                staleTime: q.staleTime ?? staleTime
+            }))
+        });
+    } else {
+        return useQuery({
+            queryKey: [key],
+            queryFn: fn,
+            staleTime
+        });
+    }
 }

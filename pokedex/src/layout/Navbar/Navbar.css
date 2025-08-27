@@ -1,8 +1,8 @@
 .navbar {
     border: 3px solid var(--border-color);
-    overflow: auto;
     width: 100%;
     padding: 30px;
+    margin-bottom: 20px;
 }
 
 .navbar-menu {
@@ -21,10 +21,12 @@
 .navbar-menu-link {
     text-decoration: none;
     color: var(--text-color);
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 .navbar-menu-icon {
     width: 100%;
-    max-width: 40px;
-
+    max-width: 50px;
+    fill: red;
 }

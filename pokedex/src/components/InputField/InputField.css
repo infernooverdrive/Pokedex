@@ -1,0 +1,18 @@
+.input-field-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-field {
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+}
+
+.input-field-label {
+    color: var(--text-color);
+    font-weight: 300;
+}
