@@ -1,0 +1,32 @@
+.flash-message {
+    background-color: var(--accent-color, #ffd700);
+    /* fallback: gold */
+    color: var(--text-color, #000);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px #00000020;
+    margin: 1rem 0;
+    animation: pop-in 0.3s ease;
+}
+
+.flash-message.success {
+    background-color: #c8e6c9;
+    color: #256029;
+}
+
+.flash-message.error {
+    background-color: #ffcdd2;
+    color: #c62828;
+}
+
+@keyframes pop-in {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

@@ -5,7 +5,6 @@ import Spinner from "../components/Spinner/Spinner";
 export default function Layout() {
     return (
         <>
-            <Spinner />
             <Navbar />
             <Outlet />
         </>
