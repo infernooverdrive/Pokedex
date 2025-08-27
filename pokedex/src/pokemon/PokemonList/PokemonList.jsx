@@ -1,9 +1,8 @@
 import FlashMessage from "../../components/FlashMessage/FlashMessage";
 import Spinner from "../../components/Spinner/Spinner";
-import usePokemonList from "../../hooks/usePokemonList"
 
-export default function PokemonList() {
-    const { data, isLoading, error } = usePokemonList();
+
+export default function PokemonList({ pokemonList, isLoading, error }) {
     return (
         isLoading ?
             <Spinner />
@@ -12,7 +11,9 @@ export default function PokemonList() {
                 <FlashMessage message={error.message} type="error" />
                 :
                 <ul>
-                    <li>Lmao no Pokemon for you</li>
+                    {pokemonList.map(pokemon => (
+                        <li key={pokemon.name}>{pokemon.name}</li>
+                    ))}
                 </ul>
     )
 }

@@ -1,7 +1,7 @@
 import { apiGet } from "./apiRequest"
-export async function fetchPokemonList() {
+export async function fetchData(url) {
     try {
-        const data = await apiGet("https://pokeapi.co/api/v2/pokemon/?limit=1302");
+        const data = await apiGet(url);
         return data;
     }
     catch (error) {
