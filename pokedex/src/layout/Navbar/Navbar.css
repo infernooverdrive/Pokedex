@@ -1,0 +1,18 @@
+.navbar {
+    border: 1px solid var(--border-color);
+    overflow: auto;
+    width: 100%;
+    padding: 30px;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navbar-menu-link {
+    text-decoration: none;
+    color: var(--text-color);
+}
