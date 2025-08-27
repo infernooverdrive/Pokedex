@@ -1,12 +1,18 @@
-# React + Vite
+# Pokedex
+Every Pokemon nerd slash programmer faces this battle at some point during their journey. It's a rite of passage, inevitable and unskippable, kind of like foraging wild ingredients in the Lush Jungle for the Grass trial or surviving Lana's terrible jokes on Brooklet Hill.
+Thus, I have dived in. I have made a Pokedex.
+Well, am making. Kind of. Mostly just crying. My tears flow smoothly like a gentle spring; my code, alas, does not. 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## What Is This
+A Pokedex. You know, the gadget every professor ever thrusts right into your empty, calluses-free hands before sending you out to ̶m̶a̶k̶e̶ ̶y̶o̶u̶ ̶d̶o̶ ̶t̶h̶e̶i̶r̶ ̶j̶o̶b̶ ̶f̶o̶r̶ ̶t̶h̶e̶m̶ start you off on your Pokemon quest? Yeah, it's exactly that but full of ✨bugs✨.
 
-Currently, two official plugins are available:
+## Features
+- Displays a list of Pokemon in colors that might not burn your eyes
+- Allows you to search for the name of the Pokemon you won't admit is your favorite
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Known issues
+- Attitude
+- It's like a Bug-type gym but without the flair Burgh exhibits
+- Sometimes the menu icons decide to take a vacation for no reason
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+I swear it made sense at 1 AM.
