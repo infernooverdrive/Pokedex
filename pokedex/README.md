@@ -1,6 +1,6 @@
 # Pokedex
 Every Pokemon nerd slash programmer faces this battle at some point during their journey. It's a rite of passage, inevitable and unskippable, kind of like foraging wild ingredients in the Lush Jungle for the Grass trial or surviving Lana's terrible jokes on Brooklet Hill.
-Thus, I have dived in. I have made a Pokedex.
+Thus, I have dove in. I have made a Pokedex.
 Well, am making. Kind of. Mostly just crying. My tears flow smoothly like a gentle spring; my code, alas, does not. 
 
 ## What Is This
