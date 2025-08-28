@@ -3,3 +3,9 @@
     background-color: var(--card-color);
     width: 100%;
 }
+
+.stats-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

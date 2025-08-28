@@ -1,6 +1,11 @@
-.pokemon-list-item-sprite {
+.pokemon-sprite {
     max-width: 50px;
     width: 100%;
+}
+
+.pokemon-dex-number {
+    color: rgba(0, 0, 0, 0.3);
+
 }
 
 .pokemon-list-item {
@@ -19,6 +24,7 @@
     position: relative;
     overflow: hidden;
     transition: transform 0.25s ease, box-shadow 0.25s ease;
+    gap: 10px;
 }
 
 .pokemon-list-item:hover {

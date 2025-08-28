@@ -1,0 +1,12 @@
+.pokemon-badge {
+    background-color: var(--card-color);
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.pokemon-badge.legendary {
+    background: linear-gradient(135deg, rgb(66, 66, 255), rgb(202, 202, 255));
+    color: gold;
+}

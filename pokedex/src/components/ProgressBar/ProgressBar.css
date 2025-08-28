@@ -1,10 +1,36 @@
 .progress-bar {
     width: 100%;
-    height: 10px;
+    height: 15px;
     background-color: rgb(200, 200, 200);
 }
 
 .progress-bar-fill {
-    height: 10px;
+    height: 15px;
     background-color: var(--primary-color);
+}
+
+.progress-bar-label {}
+
+.progress-bar-label.Hp::after {
+    content: "♥️";
+}
+
+.progress-bar-label.Attack::after {
+    content: "🗡️";
+}
+
+.progress-bar-label.Defense::after {
+    content: "🛡️"
+}
+
+.progress-bar-label.Special.attack::after {
+    content: "🪄";
+}
+
+.progress-bar-label.Special.defense::after {
+    content: "⚔️";
+}
+
+.progress-bar-label.Speed::after {
+    content: "💨";
 }
