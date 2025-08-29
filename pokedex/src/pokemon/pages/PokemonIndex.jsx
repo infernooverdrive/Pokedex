@@ -1,10 +1,10 @@
-import PokemonList from "./PokemonList/PokemonList";
-import useItem from '../hooks/useItem'
-import { fetchData } from '../utils/fetchData'
-import Spinner from "../components/Spinner/Spinner";
-import FlashMessage from "../components/FlashMessage/FlashMessage";
-import PokemonFilter from "./PokemonFilter/PokemonFilter";
-import { createHandleChange } from '../utils/createHandleChange'
+import PokemonList from "../components/PokemonList/PokemonList";
+import useItem from '../../hooks/useItem'
+import { fetchData } from '../../utils/fetchData'
+import Spinner from "../../components/Spinner/Spinner";
+import FlashMessage from "../../components/FlashMessage/FlashMessage";
+import PokemonFilter from "../components/PokemonFilter/PokemonFilter";
+import { createHandleChange } from '../../utils/createHandleChange'
 import { useState } from "react";
 
 export default function PokemonIndex() {
@@ -23,9 +23,8 @@ export default function PokemonIndex() {
     const search = values.search.toLowerCase();
 
     // Filter Pokémon before passing to the list
-    const filteredList = data?.results
-        .filter(p => p.name.toLowerCase().includes(search))
-        .slice(0, 30) ?? [];
+    const filteredList = [...(data?.results ?? [])]
+        .filter(p => p.name.toLowerCase().includes(search));
 
     return isLoading ?
         <Spinner />
@@ -36,7 +35,7 @@ export default function PokemonIndex() {
             <>
                 <PokemonFilter values={values} handleChange={handleChange} />
                 <PokemonList
-                    pokemonList={filteredList}
+                    pokemonList={search ? filteredList : [...data.results].sort(() => Math.random() - 0.5).slice(0, 10)}
                     isLoading={isLoading}
                     error={error} />
             </>

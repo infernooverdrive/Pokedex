@@ -1,4 +1,4 @@
-import { fetchData } from "../utils/fetchData";
+import { fetchData } from "../../utils/fetchData";
 
 export async function getPokemonQuery(nameOrSpeciesUrl) {
     let speciesData;

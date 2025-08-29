@@ -2,8 +2,8 @@ import { format } from '../../utils/format';
 import './Slideshow.css';
 import { useState } from 'react';
 
-export default function Slideshow({ photos }) {
-    const [currentIndex, setCurrentIndex] = useState(0);
+export default function Slideshow({ photos, firstPhotoIndex }) {
+    const [currentIndex, setCurrentIndex] = useState(firstPhotoIndex);
     const goToPrev = () => {
         setCurrentIndex((prevIndex) =>
             prevIndex === 0 ? photos.length - 1 : prevIndex - 1

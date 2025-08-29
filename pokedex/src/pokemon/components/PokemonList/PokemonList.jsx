@@ -1,9 +1,9 @@
 import './PokemonList.css';
-import useItem from '../../hooks/useItem';
-import Spinner from '../../components/Spinner/Spinner';
-import FlashMessage from '../../components/FlashMessage/FlashMessage';
+import useItem from '../../../hooks/useItem';
+import Spinner from '../../../components/Spinner/Spinner';
+import FlashMessage from '../../../components/FlashMessage/FlashMessage';
 import PokemonListItem from '../PokemonListItem.jsx/PokemonListItem';
-import { getPokemonQuery } from '../getPokemonQuery';
+import { getPokemonQuery } from '../../utils/getPokemonQuery';
 
 export default function PokemonList({ pokemonList }) {
     const pokemonQueries = pokemonList.map(pokemon => ({

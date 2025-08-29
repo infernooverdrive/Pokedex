@@ -1,6 +1,6 @@
 import './PokemonFilter.css';
-import InputField from '../../components/InputField/InputField';
-import Form from '../../components/Form/Form';
+import InputField from '../../../components/InputField/InputField';
+import Form from '../../../components/Form/Form';
 
 
 export default function PokemonFilter({ values, handleChange }) {

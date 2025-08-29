@@ -6,11 +6,11 @@ export default function Navbar() {
         <div className="navbar">
             <ul className='navbar-menu'>
                 <li className='navbar-menu-item'>
-                    <img className='navbar-menu-icon' src="menu-icons/pokedex.png" />
+                    <img className='navbar-menu-icon' src="/menu-icons/pokedex.png" />
                     <Link to="/pokemon" className='navbar-menu-link'>Pokémon</Link>
                 </li>
                 <li className='navbar-menu-item'>
-                    <img className='navbar-menu-icon' src='menu-icons/natures.png' /><Link to="" className='navbar-menu-link'>Natures</Link></li>
+                    <img className='navbar-menu-icon' src='/menu-icons/natures.png' /><Link to="" className='navbar-menu-link'>Natures</Link></li>
             </ul>
         </div>
     )
