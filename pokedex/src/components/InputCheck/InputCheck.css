@@ -1,0 +1,178 @@
+.input-check {
+    display: none;
+}
+
+.input-check-label {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.input-check-label.types\.Fire {
+    background: var(--type-fire);
+}
+
+.input-check-label.types\.Grass {
+    background: var(--type-grass);
+}
+
+.input-check-label.types\.Psychic {
+    background: var(--type-psychic);
+}
+
+.input-check-label.types\.Dragon {
+    background: var(--type-dragon);
+}
+
+.input-check-label.types\.Dark {
+    background: var(--type-dark);
+}
+
+.input-check-label.types\.Normal {
+    background: var(--type-normal);
+}
+
+.input-check-label.types\.Flying {
+    background: var(--type-flying);
+}
+
+.input-check-label.types\.Electric {
+    background: var(--type-electric);
+}
+
+.input-check-label.types\.Fighting {
+    background: var(--type-fighting);
+}
+
+.input-check-label.types\.Bug {
+    background: var(--type-bug);
+}
+
+.input-check-label.types\.Fairy {
+    background: var(--type-fairy);
+}
+
+.input-check-label.types\.Poison {
+    background: var(--type-poison);
+}
+
+.input-check-label.types\.Water {
+    background: var(--type-water);
+}
+
+.input-check-label.types\.Ghost {
+    background: var(--type-ghost);
+}
+
+.input-check-label.types\.Rock {
+    background: var(--type-rock);
+}
+
+.input-check-label.types\.Steel {
+    background: var(--type-steel);
+}
+
+.input-check-label.types\.Ice {
+    background: var(--type-ice);
+}
+
+.input-check-label.types\.Ground {
+    background: var(--type-ground);
+}
+
+
+
+.input-check:checked+.input-check-label {
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transform: translate(2px, 2px) scale(0.98);
+}
+
+.input-check-label:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.input-check:checked+.input-check-label.types\.Fire {
+    background: var(--type-fire-pressed);
+}
+
+.input-check:checked+.input-check-label.types\.Water {
+    background: var(--type-water-pressed);
+}
+
+.input-check:checked+.input-check-label.types\.Grass {
+    background: var(--type-grass-pressed);
+}
+
+.input-check:checked+.input-check-label.types\.Electric {
+    background: var(--type-electric-pressed);
+}
+
+.input-check:checked+.input-check-label.types\.Ground {
+    background: var(--type-ground-pressed);
+}
+
+.input-check:checked+.input-check-label.types\.Normal {
+    background: var(--type-normal-pressed);
+}
+
+.input-check:checked+.input-check-label.types\.Psychic {
+    background: var(--type-psychic-pressed);
+}
+
+.input-check:checked+.input-check-label.types\.Ice {
+    background: var(--type-ice-pressed);
+}
+
+.input-check:checked+.input-check-label.types\.Dark {
+    background: var(--type-dark-pressed);
+}
+
+.input-check:checked+.input-check-label.types\.Bug {
+    background: var(--type-bug-pressed);
+}
+
+.input-check:checked+.input-check-label.types\.Steel {
+    background: var(--type-steel-pressed);
+}
+
+.input-check:checked+.input-check-label.types\.Rock {
+    background: var(--type-rock-pressed);
+}
+
+.input-check:checked+.input-check-label.types\.Ghost {
+    background: var(--type-ghost-pressed);
+}
+
+.input-check:checked+.input-check-label.types\.Dragon {
+    background: var(--type-dragon-pressed);
+}
+
+.input-check:checked+.input-check-label.types\.Flying {
+    background: var(--type-flying-pressed);
+}
+
+.input-check:checked+.input-check-label.types\.Poison {
+    background: var(--type-poison-pressed);
+}
+
+.input-check:checked+.input-check-label.types\.Fairy {
+    background: var(--type-fairy-pressed);
+}
+
+.input-check:checked+.input-check-label.types\.Fighting {
+    background: var(--type-fighting-pressed);
+}

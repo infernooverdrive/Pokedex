@@ -1,0 +1,47 @@
+.progress-bar {
+    width: 100%;
+    height: 12px;
+    background-color: #eee;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background-color: var(--primary-color, #4caf50);
+    width: 0%;
+    transition: width 0.4s ease-in-out;
+    border-radius: 6px 0 0 6px;
+}
+
+.progress-bar-label {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+
+.progress-bar-label.Hp::after {
+    content: "♥️";
+}
+
+.progress-bar-label.Attack::after {
+    content: "🗡️";
+}
+
+.progress-bar-label.Defense::after {
+    content: "🛡️";
+}
+
+.progress-bar-label.Special.attack::after {
+    content: "🪄";
+}
+
+.progress-bar-label.Special.defense::after {
+    content: "⚔️";
+}
+
+.progress-bar-label.Speed::after {
+    content: "💨";
+}

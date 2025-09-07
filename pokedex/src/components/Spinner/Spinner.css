@@ -1,0 +1,28 @@
+.spinner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: spin 1s linear infinite;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(to bottom, #e75353 50%, white 50%);
+    border: 5px solid black;
+    border-radius: 50%;
+    position: relative;
+    align-self: center;
+    justify-self: center;
+}
+
+.spinner-center {
+    width: 30px;
+    height: 30px;
+    border: 5px solid black;
+    border-radius: 50%;
+    background-color: white;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}

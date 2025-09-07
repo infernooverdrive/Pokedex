@@ -1,0 +1,25 @@
+.pokemon-details-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--card-color);
+    padding: 1.5rem;
+}
+
+.stats-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media (min-width:720px) {
+    .pokemon-details-container {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        background-color: var(--card-color);
+        padding: 1.5rem;
+    }
+}

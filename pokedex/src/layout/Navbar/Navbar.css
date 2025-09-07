@@ -1,0 +1,33 @@
+.navbar {
+    border: 3px solid var(--border-color);
+    width: 100%;
+    padding: 30px;
+    margin-bottom: 20px;
+    background-color: var(--card-color);
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navbar-menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-menu-link {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.navbar-menu-icon {
+    width: 100%;
+    max-width: 50px;
+    fill: red;
+}

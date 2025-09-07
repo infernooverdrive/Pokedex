@@ -1,0 +1,325 @@
+.pokemon-sprite {
+    max-width: 100px;
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+}
+
+.pokeball-graphics {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(to bottom,
+            #e75353 0%,
+            #e75353 45%,
+            /* red */
+            transparent 45%,
+            /* start gap */
+            transparent 55%,
+            /* end gap */
+            white 55%,
+            /* white */
+            white 100%);
+    border-radius: 50%;
+    position: relative;
+    align-self: center;
+    justify-self: center;
+}
+
+.pokeball-graphics-center {
+    background-color: transparent;
+    z-index: 99;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+.pokemon-dex-number {
+    color: rgba(0, 0, 0, 0.3);
+
+}
+
+.pokemon-list-item {
+    text-decoration: none;
+    background-color: var(--card-color, #f0f0f0);
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border-radius: 8px;
+    font-weight: 600;
+    color: #222;
+    box-sizing: border-box;
+    user-select: none;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    gap: 10px;
+    font-size: large;
+}
+
+.pokemon-list-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.pokemon-list-item::before {
+    margin-right: 8px;
+    font-size: 1.2em;
+}
+
+
+.pokemon-list-item.normal {
+    background: linear-gradient(135deg, rgba(189, 189, 189, 0.15), rgba(218, 218, 218, 0.3));
+    border: 1px solid #c7c7c7;
+    color: black;
+    box-shadow: 0 2px 6px rgba(240, 240, 240, 0.3);
+}
+
+.pokemon-list-item.normal::before {
+    content: "🤍";
+}
+
+.pokeball-graphics.normal {
+    background: linear-gradient(to bottom,
+            rgb(200, 200, 200) 0%,
+            rgb(200, 200, 200) 45%,
+            transparent 45%,
+            transparent 55%,
+            rgb(200, 200, 200) 55%,
+            rgb(200, 200, 200) 100%);
+}
+
+.pokemon-list-item.fire {
+    background: linear-gradient(135deg, rgba(255, 69, 58, 0.15), rgba(255, 0, 0, 0.3));
+    border: 1px solid #ff2400;
+    box-shadow: 0 2px 6px rgba(255, 0, 0, 0.3);
+    color: #a70000;
+}
+
+.pokemon-list-item.fire::before {
+    content: "🔥";
+}
+
+.pokeball-graphics.fire {
+    background: linear-gradient(to bottom,
+            rgb(182, 80, 80) 0%,
+            rgb(182, 80, 80) 45%,
+            transparent 45%,
+            transparent 55%,
+            rgb(182, 80, 80) 55%,
+            rgb(182, 80, 80) 100%);
+}
+
+
+.pokemon-list-item.grass {
+    background: linear-gradient(135deg, rgba(60, 179, 113, 0.15), rgba(34, 139, 34, 0.3));
+    border: 1px solid #228b22;
+    box-shadow: 0 2px 6px rgba(34, 139, 34, 0.3);
+    color: #156515;
+}
+
+.pokemon-list-item.grass::before {
+    content: "🍃";
+}
+
+.pokeball-graphics.grass {
+    background: linear-gradient(to bottom,
+            rgb(114, 169, 117) 0%,
+            rgb(114, 169, 117) 45%,
+            transparent 45%,
+            transparent 55%,
+            rgb(114, 169, 117) 55%,
+            rgb(114, 169, 117) 100%);
+}
+
+.pokemon-list-item.water {
+    background: linear-gradient(135deg, rgba(64, 164, 223, 0.15), rgba(0, 105, 148, 0.3));
+    border: 1px solid #006994;
+    box-shadow: 0 2px 6px rgba(0, 105, 148, 0.3);
+    color: #004c66;
+}
+
+.pokemon-list-item.water::before {
+    content: "💧";
+}
+
+.pokemon-list-item.electric {
+    background: linear-gradient(135deg, rgba(255, 223, 0, 0.15), rgba(255, 204, 0, 0.3));
+    border: 1px solid #ffcc00;
+    box-shadow: 0 2px 6px rgba(255, 204, 0, 0.3);
+    color: #b38600;
+}
+
+.pokemon-list-item.electric::before {
+    content: "⚡";
+}
+
+.pokemon-list-item.ice {
+    background: linear-gradient(135deg, rgba(173, 216, 230, 0.15), rgba(135, 206, 235, 0.3));
+    border: 1px solid #87ceeb;
+    box-shadow: 0 2px 6px rgba(135, 206, 235, 0.3);
+    color: #4682b4;
+}
+
+.pokemon-list-item.ice::before {
+    content: "❄️";
+}
+
+.pokemon-list-item.psychic {
+    background: linear-gradient(135deg, rgba(255, 105, 180, 0.15), rgba(219, 112, 147, 0.3));
+    border: 1px solid #db7093;
+    box-shadow: 0 2px 6px rgba(219, 112, 147, 0.3);
+    color: #a0526d;
+}
+
+.pokemon-list-item.psychic::before {
+    content: "🔮";
+}
+
+.pokemon-list-item.dark {
+    background: linear-gradient(135deg, rgba(54, 69, 79, 0.15), rgba(25, 25, 25, 0.3));
+    border: 1px solid #191919;
+    box-shadow: 0 2px 6px rgba(25, 25, 25, 0.3);
+    color: #333;
+}
+
+.pokemon-list-item.dark::before {
+    content: "🌑";
+}
+
+.pokemon-list-item.fairy {
+    background: linear-gradient(135deg, rgba(255, 182, 193, 0.15), rgba(255, 105, 180, 0.3));
+    border: 1px solid #ff69b4;
+    box-shadow: 0 2px 6px rgba(255, 105, 180, 0.3);
+    color: #c71585;
+}
+
+.pokemon-list-item.fairy::before {
+    content: "✨";
+}
+
+.pokemon-list-item.rock {
+    background: linear-gradient(135deg, rgba(169, 169, 169, 0.15), rgba(105, 105, 105, 0.3));
+    border: 1px solid #696969;
+    box-shadow: 0 2px 6px rgba(105, 105, 105, 0.3);
+    color: #404040;
+}
+
+.pokemon-list-item.rock::before {
+    content: "🪨";
+    margin-right: 8px;
+    font-size: 1.2em;
+}
+
+.pokemon-list-item.ground {
+    background: linear-gradient(135deg, rgba(210, 180, 140, 0.15), rgba(160, 82, 45, 0.3));
+    border: 1px solid #a0522d;
+    box-shadow: 0 2px 6px rgba(160, 82, 45, 0.3);
+    color: #5a2d0c;
+}
+
+.pokemon-list-item.ground::before {
+    content: "🌍";
+}
+
+.pokemon-list-item.bug {
+    background: linear-gradient(135deg, rgba(154, 205, 50, 0.15), rgba(107, 142, 35, 0.3));
+    border: 1px solid #6b8e23;
+    box-shadow: 0 2px 6px rgba(107, 142, 35, 0.3);
+    color: #4a6029;
+}
+
+.pokemon-list-item.bug::before {
+    content: "🐛";
+}
+
+.pokemon-list-item.fighting {
+    background: linear-gradient(135deg, rgba(178, 34, 34, 0.15), rgba(139, 0, 0, 0.3));
+    border: 1px solid #8b0000;
+    box-shadow: 0 2px 6px rgba(139, 0, 0, 0.3);
+    color: #5a0000;
+}
+
+.pokemon-list-item.fighting::before {
+    content: "🥊";
+}
+
+.pokemon-list-item.flying {
+    background: linear-gradient(135deg, rgba(135, 206, 250, 0.15), rgba(70, 130, 180, 0.3));
+    border: 1px solid #4682b4;
+    box-shadow: 0 2px 6px rgba(70, 130, 180, 0.3);
+    color: #2c4f72;
+}
+
+.pokemon-list-item.flying::before {
+    content: "🦅";
+}
+
+.pokemon-list-item.ghost {
+    background: linear-gradient(135deg, rgba(148, 0, 211, 0.15), rgba(75, 0, 130, 0.3));
+    border: 1px solid #4b0082;
+    box-shadow: 0 2px 6px rgba(75, 0, 130, 0.3);
+    color: #2e004e;
+}
+
+.pokemon-list-item.ghost::before {
+    content: "👻";
+}
+
+.pokeball-graphics.ghost {
+    background: linear-gradient(to bottom,
+            rgb(93, 68, 99) 0%,
+            rgb(93, 68, 99) 45%,
+            transparent 45%,
+            transparent 55%,
+            rgb(93, 68, 99) 55%,
+            rgb(93, 68, 99) 100%);
+}
+
+.pokemon-list-item.steel {
+    background: linear-gradient(135deg, rgba(192, 192, 192, 0.15), rgba(128, 128, 128, 0.3));
+    border: 1px solid #808080;
+    box-shadow: 0 2px 6px rgba(128, 128, 128, 0.3);
+    color: #505050;
+}
+
+.pokemon-list-item.steel::before {
+    content: "⚙️";
+}
+
+.pokemon-list-item.poison {
+    background: linear-gradient(135deg, rgba(55, 26, 90, 0.15), rgba(71, 58, 112, 0.3));
+    border: 1px solid #b188fd;
+    box-shadow: 0 2px 6px rgba(148, 148, 148, 0.3);
+    color: #653ae5;
+}
+
+.pokemon-list-item.poison::before {
+    content: "☠️";
+}
+
+.pokeball-graphics.poison {
+    background: linear-gradient(to bottom,
+            rgb(142, 88, 154) 0%,
+            rgb(142, 88, 154) 45%,
+            transparent 45%,
+            transparent 55%,
+            rgb(142, 88, 154) 55%,
+            rgb(142, 88, 154) 100%);
+}
+
+.pokemon-list-item.dragon {
+    background: linear-gradient(135deg, rgba(26, 27, 90, 0.15), rgba(65, 69, 154, 0.3));
+    border: 1px solid #1a21b3;
+    box-shadow: 0 2px 6px rgba(102, 102, 102, 0.3);
+    color: #2631c8;
+}
+
+.pokemon-list-item.dragon::before {
+    content: "🐉";
+}

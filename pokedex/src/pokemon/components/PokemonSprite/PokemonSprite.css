@@ -1,0 +1,93 @@
+.sprite-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.sprite {
+    max-width: fit-content;
+    width: 100%;
+}
+
+.sprite.bug {
+    background: var(--type-bug);
+}
+
+.sprite.normal {
+    background: var(--type-normal);
+}
+
+.sprite.fire {
+    background: var(--type-fire);
+}
+
+.sprite.grass {
+    background: var(--type-grass);
+}
+
+.sprite.water {
+    background: var(--type-water);
+}
+
+.sprite.electric {
+    background: var(--type-electric);
+}
+
+.sprite.poison {
+    background: var(--type-poison);
+}
+
+.sprite.dark {
+    background: var(--type-dark);
+}
+
+.sprite.fighting {
+    background: var(--type-fighting);
+}
+
+.sprite.flying {
+    background: var(--type-flying);
+}
+
+.sprite.ice {
+    background: var(--type-ice);
+}
+
+.sprite.fairy {
+    background: var(--type-fairy);
+}
+
+.sprite.dragon {
+    background: var(--type-dragon);
+}
+
+.sprite.psychic {
+    background: var(--type-psychic);
+}
+
+.sprite.rock {
+    background: var(--type-rock);
+}
+
+.sprite.ground {
+    background: var(--type-ground);
+}
+
+.sprite.ghost {
+    background: var(--type-ghost);
+}
+
+.togglers-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+.toggle-btn {
+    background-color: transparent;
+    font-size: 2rem;
+    border: none;
+}

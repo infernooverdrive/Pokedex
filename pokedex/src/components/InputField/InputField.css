@@ -1,0 +1,31 @@
+.input-field-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.input-field {
+    padding: 0.75rem;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+}
+
+.input-field:focus {
+    border-color: #d32f2f;
+    box-shadow: 0 0 8px #ff0000;
+    outline: none;
+}
+
+input[type="search"]::placeholder {
+    color: #888;
+}
+
+.input-field-label {
+    color: var(--text-color);
+    font-weight: 300;
+}

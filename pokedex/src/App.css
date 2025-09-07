@@ -1,0 +1,60 @@
+#root {
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+}
+
+:root {
+  --bg-color: #f8f8f8;
+  --text-color: #2f2f2f;
+  --primary-color: #ee1515;
+  --accent-color: #3b4cca;
+  --card-color: #ffffff;
+  --border-color: #e0e0e0;
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+
+  --type-normal: linear-gradient(145deg, #a8a77a, #8a8a59);
+  --type-fire: linear-gradient(145deg, #ee8130, #cc5500);
+  --type-water: linear-gradient(145deg, #6390f0, #1e81f3);
+  --type-electric: linear-gradient(145deg, #f7d02c, #e6b800);
+  --type-grass: linear-gradient(145deg, #7ac74c, #4e8234);
+  --type-ice: linear-gradient(145deg, #96d9d6, #5ca9a6);
+  --type-fighting: linear-gradient(145deg, #c22e28, #7d1f1a);
+  --type-poison: linear-gradient(145deg, #a33ea1, #682a68);
+  --type-ground: linear-gradient(145deg, #e2bf65, #927d44);
+  --type-flying: linear-gradient(145deg, #a98ff3, #705898);
+  --type-psychic: linear-gradient(145deg, #f95587, #a13959);
+  --type-bug: linear-gradient(145deg, #a6b91a, #6d7815);
+  --type-rock: linear-gradient(145deg, #b6a136, #786824);
+  --type-ghost: linear-gradient(145deg, #735797, #493963);
+  --type-dragon: linear-gradient(145deg, #6f35fc, #4924a1);
+  --type-dark: linear-gradient(145deg, #705746, #49392f);
+  --type-steel: linear-gradient(145deg, #b7b7ce, #787887);
+  --type-fairy: linear-gradient(145deg, #d685ad, #9b6470);
+
+
+  --type-normal-pressed: linear-gradient(145deg, #8a8a59, #6d6d46);
+  --type-fire-pressed: linear-gradient(145deg, #cc5500, #802400);
+  --type-water-pressed: linear-gradient(145deg, #1e81f3, #174a9c);
+  --type-electric-pressed: linear-gradient(145deg, #e6b800, #a68c00);
+  --type-grass-pressed: linear-gradient(145deg, #4e8234, #2d4723);
+  --type-ice-pressed: linear-gradient(145deg, #5ca9a6, #356b6a);
+  --type-fighting-pressed: linear-gradient(145deg, #7d1f1a, #401010);
+  --type-poison-pressed: linear-gradient(145deg, #682a68, #3c183c);
+  --type-ground-pressed: linear-gradient(145deg, #927d44, #4d3f23);
+  --type-flying-pressed: linear-gradient(145deg, #705898, #3e2f55);
+  --type-psychic-pressed: linear-gradient(145deg, #a13959, #5c2233);
+  --type-bug-pressed: linear-gradient(145deg, #6d7815, #3a400a);
+  --type-rock-pressed: linear-gradient(145deg, #786824, #3d3412);
+  --type-ghost-pressed: linear-gradient(145deg, #493963, #241c31);
+  --type-dragon-pressed: linear-gradient(145deg, #4924a1, #24124f);
+  --type-dark-pressed: linear-gradient(145deg, #49392f, #1f1712);
+  --type-steel-pressed: linear-gradient(145deg, #787887, #3e3e45);
+  --type-fairy-pressed: linear-gradient(145deg, #9b6470, #5b3a40);
+}
